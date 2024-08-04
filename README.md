@@ -15,12 +15,15 @@ This repository contains Terraform configuration to set up an S3 bucket for host
    ```bash
    git clone https://github.com/gopikrishna152/Static_website_Terraform.git
    cd Static_website_Terraform
+   ```
+   
    
 2. **Configure AWS CLI**
 
    Ensure that you have AWS CLI installed and configured. Run the following command and provide your AWS credentials:
    ```bash
    aws configure
+   ```
 
    You'll be prompted to enter your AWS Access Key ID, Secret Access Key, Default Region Name, and Default Output Format.<br>
 3. **Initialize Terraform**
@@ -34,23 +37,23 @@ This repository contains Terraform configuration to set up an S3 bucket for host
 Review the changes that Terraform will make to your AWS environment:
   ```bash
  terraform plan
-
+```
   This command will show you a preview of the changes that will be applied.
 
-5. **Apply Configuration**
+5.  **Apply Configuration**
 
 Apply the Terraform configuration to create the S3 bucket and upload the website files:
 
   ```bash
  terraform apply
-
+  ```
   You will be prompted to confirm that you want to apply the changes. Type yes to proceed.
 
 6. **Access the Website**
 
 Once the configuration is applied successfully, Terraform will output the URL of the static website. You can access your website using this URL.
 
-  **File Structure**
+**File Structure**
 main.tf: Contains Terraform configuration for S3 bucket setup and website hosting.
 html/: Directory containing website files including HTML, CSS, JS, and images.
 
